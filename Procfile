@@ -1,1 +1,1 @@
-web: python run.py
+web: python quotes-app/run.py
