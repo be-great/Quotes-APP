@@ -1,0 +1,17 @@
+name: Run Python Script
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Run Python script
+      run: python quotes-app/run.py
